@@ -1,18 +1,35 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "dependencies": {
-    "@lordicon/element": "^1.10.0",
-    "lottie-web": "^5.12.2",
-    "nuxt": "^3.12.4",
-    "vue": "latest"
-  }
+    "name": "demo-nuxt",
+    "version": "2.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Animated Lordicon icons in a Nuxt app, with @lordicon/element.",
+    "license": "MIT",
+    "engines": {
+        "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+    },
+    "scripts": {
+        "dev": "nuxt dev",
+        "build": "nuxt build",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview",
+        "postinstall": "nuxt prepare",
+        "lint": "eslint .",
+        "typecheck": "nuxt typecheck",
+        "format": "prettier --write .",
+        "format:check": "prettier --check ."
+    },
+    "dependencies": {
+        "@lordicon/element": "^3.0.2",
+        "nuxt": "^4.6.0",
+        "vue": "^3.5.43",
+        "vue-router": "^5.3.1"
+    },
+    "devDependencies": {
+        "@nuxt/eslint": "^1.17.0",
+        "eslint": "^10.12.0",
+        "prettier": "^3.9.9",
+        "typescript": "^6.0.3",
+        "vue-tsc": "^3.3.12"
+    }
 }
